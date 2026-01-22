@@ -93,8 +93,14 @@ export default function Home() {
       {/* Header */}
       <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md border-b border-nexus-primary/10 py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <a href="#" className="font-heading text-2xl tracking-tighter uppercase font-bold text-nexus-primary">
-            NEXUS<span className="font-light">CLINIC</span>
+          <a href="#">
+            <Image
+              src="/logo_nexus1-1.webp"
+              alt="Nexus Clinic"
+              width={150}
+              height={40}
+              className="brightness-0"
+            />
           </a>
 
           <nav className="hidden lg:flex gap-10 text-[11px] uppercase tracking-ultra font-bold text-nexus-primary/70">
@@ -192,11 +198,11 @@ export default function Home() {
       {/* Why Nexus */}
       <section id="about" className="py-24 bg-nexus-primary text-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-12 gap-16 items-start">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             <div className="lg:col-span-5 reveal">
               <span className="text-nexus-gold font-heading text-xs uppercase tracking-[0.3em] mb-4 block">Our Approach</span>
-              <h2 className="font-heading text-4xl lg:text-6xl tracking-tight mb-8 leading-none uppercase">Why Nexus Clinic <br /><span className="italic font-light">Kuala Lumpur</span></h2>
-              <p className="text-white/80 font-light leading-relaxed mb-8 text-lg">
+              <h2 className="font-heading text-4xl lg:text-6xl tracking-tight mb-6 lg:mb-8 leading-none uppercase">Why Nexus Clinic <br /><span className="italic font-light">Kuala Lumpur</span></h2>
+              <p className="text-white/80 font-light leading-relaxed mb-4 lg:mb-8 text-base lg:text-lg">
                 Nexus Clinic is a medical aesthetic clinic, not a beauty salon. Our approach is doctor-first and diagnosis-driven. We prioritise safety, facial harmony, and long-term skin health over short-term trends.
               </p>
             </div>
@@ -580,8 +586,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-24">
             <div className="lg:col-span-2">
-              <a href="#" className="font-heading text-4xl tracking-tighter uppercase font-bold text-white mb-8 block">
-                NEXUS<span className="font-light italic text-nexus-gold">CLINIC</span>
+              <a href="#" className="mb-8 block">
+                <Image
+                  src="/logo_nexus1-1.webp"
+                  alt="Nexus Clinic"
+                  width={180}
+                  height={50}
+                />
               </a>
               <p className="max-w-md font-body text-sm font-light leading-relaxed mb-10">
                 Founded in 2001, Nexus Clinic is a top-notch aesthetic center, providing a comprehensive range of non-surgical aesthetic procedures and advanced laser treatments. We serve our clients&apos; needs with confidential, professional and personalized medical aesthetic services.
