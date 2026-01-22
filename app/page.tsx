@@ -389,7 +389,7 @@ export default function Home() {
               <Star className="mx-auto mb-10 text-nexus-gold fill-nexus-gold" size={44} />
 
               {/* Slider Container */}
-              <div className="relative min-h-[200px] lg:min-h-[240px]">
+              <div className="relative min-h-[250px] lg:min-h-[300px]">
                 {testimonials.map((testimonial, idx) => (
                   <div
                     key={idx}
@@ -406,7 +406,7 @@ export default function Home() {
               </div>
 
               {/* Navigation Dots */}
-              <div className="flex justify-center gap-3 mt-4">
+              <div className="flex justify-center gap-3">
                 {testimonials.map((_, idx) => (
                   <button
                     key={idx}
@@ -416,21 +416,6 @@ export default function Home() {
                 ))}
               </div>
 
-              {/* Arrow Navigation */}
-              <div className="flex justify-center gap-4 mt-8">
-                <button
-                  onClick={() => setActiveTestimonial(prev => prev === 0 ? testimonials.length - 1 : prev - 1)}
-                  className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-all"
-                >
-                  <ChevronDown className="rotate-90" size={20} />
-                </button>
-                <button
-                  onClick={() => setActiveTestimonial(prev => (prev + 1) % testimonials.length)}
-                  className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-all"
-                >
-                  <ChevronDown className="-rotate-90" size={20} />
-                </button>
-              </div>
           </div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none opacity-[0.03] select-none">
             <div className="font-heading text-[25vw] font-bold leading-none uppercase">REVIEWS</div>
