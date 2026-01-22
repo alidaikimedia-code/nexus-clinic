@@ -16,9 +16,9 @@ module.exports = {
         }
       },
       fontFamily: {
-        heading: ['var(--font-oswald)', 'Oswald', 'sans-serif'],
-        body: ['var(--font-chivo)', 'Chivo', 'sans-serif'],
-        sans: ['var(--font-chivo)', 'Chivo', 'sans-serif']
+        heading: ['var(--font-poppins)', 'Poppins', 'sans-serif'],
+        body: ['var(--font-inter)', 'Inter', 'sans-serif'],
+        sans: ['var(--font-inter)', 'Inter', 'sans-serif']
       },
       letterSpacing: {
         'luxury': '0.1em',

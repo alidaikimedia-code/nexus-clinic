@@ -1,19 +1,19 @@
 import type { Metadata } from 'next'
-import { Oswald, Chivo } from 'next/font/google'
+import { Poppins, Inter } from 'next/font/google'
 import './globals.css'
 
-const oswald = Oswald({
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-oswald',
+  variable: '--font-poppins',
   display: 'swap',
-  weight: ['200', '300', '400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
 })
 
-const chivo = Chivo({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-chivo',
+  variable: '--font-inter',
   display: 'swap',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  weight: ['300', '400', '500', '600', '700'],
 })
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${oswald.variable} ${chivo.variable} scroll-smooth`}>
+    <html lang="en" className={`${poppins.variable} ${inter.variable} scroll-smooth`}>
       <body className="antialiased">{children}</body>
     </html>
   )

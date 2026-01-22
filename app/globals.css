@@ -8,19 +8,19 @@
 }
 
 body {
-  font-family: var(--font-chivo), 'Chivo', sans-serif;
+  font-family: var(--font-inter), 'Inter', sans-serif;
   color: var(--primary);
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Ensure only Oswald and Chivo fonts */
+/* Ensure only Poppins and Inter fonts */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-oswald), 'Oswald', sans-serif;
+  font-family: var(--font-poppins), 'Poppins', sans-serif;
 }
 
 p, span, a, li, label, input, textarea, select, button {
-  font-family: var(--font-chivo), 'Chivo', sans-serif;
+  font-family: var(--font-inter), 'Inter', sans-serif;
 }
 
 /* Custom Scrollbar */
@@ -76,4 +76,18 @@ details > summary::-webkit-details-marker {
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
+}
+
+/* Badge Float Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.animate-float {
+  animation: float 2s ease-in-out infinite;
 }

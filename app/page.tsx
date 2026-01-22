@@ -103,15 +103,15 @@ export default function Home() {
             />
           </a>
 
-          <nav className="hidden lg:flex gap-10 text-[11px] uppercase tracking-ultra font-bold text-nexus-primary/70">
-            <a href="#about" className="hover:text-nexus-primary transition-colors">About</a>
-            <a href="#treatments" className="hover:text-nexus-primary transition-colors">Treatments</a>
-            <a href="#weight-loss" className="hover:text-nexus-primary transition-colors">Weight Loss</a>
-            <a href="#faq" className="hover:text-nexus-primary transition-colors">FAQ</a>
-            <a href="#contact" className="hover:text-nexus-primary transition-colors">Contact</a>
+          <nav className="hidden lg:flex gap-8 text-[12px] uppercase tracking-wide font-semibold text-nexus-primary">
+            <a href="#about" className="hover:text-nexus-gold transition-colors">About</a>
+            <a href="#treatments" className="hover:text-nexus-gold transition-colors">Treatments</a>
+            <a href="#weight-loss" className="hover:text-nexus-gold transition-colors">Weight Loss</a>
+            <a href="#faq" className="hover:text-nexus-gold transition-colors">FAQ</a>
+            <a href="#contact" className="hover:text-nexus-gold transition-colors">Contact</a>
           </nav>
 
-          <a href="#contact" className="hidden md:flex items-center gap-2 border border-nexus-primary px-6 py-2.5 font-heading text-[10px] uppercase tracking-ultra font-bold hover:bg-nexus-primary hover:text-white transition-all duration-500">
+          <a href="#contact" className="hidden md:flex items-center gap-2 bg-nexus-primary text-white px-6 py-3 rounded-full font-heading text-[11px] uppercase tracking-wide font-semibold hover:bg-nexus-dark transition-all duration-300">
             Book Assessment
           </a>
 
@@ -135,8 +135,8 @@ export default function Home() {
       <section className="pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-6 min-h-[80vh] flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <div className="w-full lg:w-1/2 reveal">
-            <div className="inline-flex items-center gap-2 px-3 py-1 border border-nexus-primary/20 rounded-full mb-6">
-              <span className="w-2 h-2 rounded-full bg-nexus-primary"></span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 border border-nexus-primary/20 rounded-full mb-6 animate-float bg-white/50 backdrop-blur-sm">
+              <span className="w-2 h-2 rounded-full bg-nexus-gold"></span>
               <span className="text-[10px] uppercase tracking-widest font-bold text-nexus-primary">MOH Accredited Clinic</span>
             </div>
 
