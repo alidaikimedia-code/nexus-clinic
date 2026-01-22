@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #354740;
+  --secondary: #ffffff;
+}
+
+body {
+  font-family: var(--font-chivo), 'Chivo', sans-serif;
+  color: var(--primary);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ensure only Oswald and Chivo fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-oswald), 'Oswald', sans-serif;
+}
+
+p, span, a, li, label, input, textarea, select, button {
+  font-family: var(--font-chivo), 'Chivo', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #354740;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image treatment */
+.img-luxury {
+  filter: grayscale(15%) contrast(105%);
+  transition: all 0.5s ease;
+}
+.img-luxury:hover {
+  filter: grayscale(0%) contrast(100%);
+}
+
+/* Text selection */
+::selection {
+  background: #354740;
+  color: #ffffff;
+}
+
+/* Details/Summary styling */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Luxury shadow */
+.luxury-shadow {
+  box-shadow: 0 25px 50px -12px rgba(53, 71, 64, 0.15);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
