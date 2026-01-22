@@ -356,7 +356,7 @@ export default function Home() {
 
       {/* Regenerative Text Focus */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-stretch">
            <div className="reveal">
               <span className="text-[11px] uppercase tracking-ultra text-nexus-gold font-bold mb-4 block">Advanced Science</span>
               <h2 className="font-heading text-4xl lg:text-6xl font-bold uppercase mb-8 leading-none">Tissue Repair <br /><span className="italic font-light text-nexus-primary">Technology</span></h2>
@@ -368,17 +368,16 @@ export default function Home() {
                    &quot;This approach aligns with evidence-based medical understanding described by leading institutions such as the Mayo Clinic, where procedures like medical laser resurfacing work by creating controlled thermal effects that stimulate the skin&apos;s natural healing response and collagen production.&quot;
                  </p>
               </div>
-              <p className="text-nexus-primary/60 font-light mb-10 leading-relaxed">
+              <p className="text-nexus-primary/60 font-light leading-relaxed">
                 These treatments are suited for patients seeking gradual improvement in skin texture, tone, elasticity, and hair quality, with minimal downtime and doctor-guided planning.
               </p>
            </div>
-           <div className="reveal order-first lg:order-last">
+           <div className="reveal order-first lg:order-last relative">
               <Image
                 src="https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=2070&auto=format&fit=crop"
                 alt="Lab Science"
-                width={800}
-                height={600}
-                className="rounded-[4rem] luxury-shadow"
+                fill
+                className="object-cover"
               />
            </div>
         </div>
